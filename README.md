@@ -3,7 +3,7 @@
 ```
 $ git clone https://github.com/cooloo9871/k8s-resource_check.git;cd k8s-resource_check
 ```
-
+## You need to run it on the master
 ```
 $ bash resource_check.sh
 Node:rke-m1
