@@ -10,10 +10,10 @@ do
   for c in $ns
   do
     pod=$(kubectl get pods -n $c -o wide | grep -w Running | grep -w $nn | tr -s \ -| cut -d ' ' -f1)
-    for n in $pod
+    for p in $pod
     do
       echo "Namespace: $c"
-      kubectl -n $c top pod $n
+      kubectl -n $c top pod $p
       echo
     done
   done
